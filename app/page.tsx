@@ -15,6 +15,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useTables } from './core';
 import { PocketBaseClient } from './core/services/pocketbase';
+import BannerComponents from './presentation/components/Banner/BannerComponents';
 // import { PocketBaseClient } from './core/services/pocketbase';
 
 export default function Home() {
@@ -39,6 +40,7 @@ export default function Home() {
       <Layout>
         <SectionHeader />
         <SectionBanner />
+        <BannerComponents />
         <SectionCategory />
         <SectionProducts />
       </Layout>
